@@ -9,15 +9,11 @@ html{
     box-sizing:  border-box;
     color: var(--dark);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 body{
     background-color: #ccc;
     height: 100%;
-    margin: 30px 50px;
+    margin: 10px 10px;
     line-height: 1.4;
 }
 
@@ -75,7 +71,7 @@ a{
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
 }
 
