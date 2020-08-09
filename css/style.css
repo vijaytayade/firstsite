@@ -1,10 +1,91 @@
-body{
-    height: 100%;
-    background: linear-gradient(to top, rgba(40, 105, 107,0), rgba(45, 184, 189,1));
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+:root{
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104,104,104,0.8);
 }
 
-h2:hover{
-    color: white;
+html{
+    box-sizing:  border-box;
+    color: var(--dark);
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+    height: 100%;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+    a:hover{
+        color: var(--greenapple);
+    }
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* Navigation */ 
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--darkermatter);
+    
+}
+    .left-nav{
+        display: grid;
+        grid-template-columns:  8rem 8rem;
+        place-items: center center;
+    }
+
+        .left-nav a {
+            background-color: var(--primary);
+            text-decoration: none;
+            padding: 0.8rem;
+            color: var(--dark);
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            box-shadow: var(--shadow);
+            border-radius: 25px;
+        }
+
+            .left-nav a:hover {
+                background: var(--dark);
+                color: var(--light);
+            }
+    .right-nav {
+        display: grid;
+        place-items: center end;
+    }
+
+/*  Top Container */
+
+.showcase{
+    min-height: 800px;
+    background: url(../img/gears.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+    .showcase h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+        color: var(--primary);
+        display: flex;
+        justify-content: flex-end;
+        padding: .8rem;
+       
+        
+    }
